@@ -1,0 +1,20 @@
+set x 10
+print x
+set x 11
+print x
+set x 12
+print x
+set x 13
+print x
+set x 14
+print x
+set x 15
+print x
+set x 16
+print x
+set x 17
+print x
+set x 18
+print x
+set x 19
+print x

@@ -1,0 +1,10 @@
+help
+set name var
+print name
+    set     name     newvar
+          print name
+     print name
+set name1 var1
+print name1
+run script.txt
+quit

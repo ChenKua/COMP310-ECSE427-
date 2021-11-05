@@ -1,0 +1,20 @@
+set y 20
+print y
+set y 21
+print y
+set y 22
+print y
+set y 23
+print y
+set y 24
+print y
+set y 25
+print y
+set y 26
+print y
+set y 27
+print y
+set y 28
+print y
+set y 29
+print y

@@ -1,0 +1,7 @@
+    help
+set var 1000
+print var
+   set   var    asdkggg
+print var
+print next_var
+print aasdasd asdasd

@@ -1,0 +1,100 @@
+3.1 
+    Quanta = 2
+    CPU cycles elapsed: 1091
+    CPU cycles elapsed: 1277
+    CPU cycles elapsed: 1351
+    CPU cycles elapsed: 1127
+    CPU cycles elapsed: 1292
+    Average: 1127.6
+
+3.2
+    Quanta = 5
+    CPU cycles elapsed: 1022
+    CPU cycles elapsed: 949
+    CPU cycles elapsed: 939
+    CPU cycles elapsed: 1013
+    CPU cycles elapsed: 1101
+    Average: 1004.8
+
+    Quanta = 20
+    CPU cycles elapsed: 933
+    CPU cycles elapsed: 1027
+    CPU cycles elapsed: 666
+    CPU cycles elapsed: 800
+    CPU cycles elapsed: 971
+    Average: 879.4
+
+3.3.a
+    The order of the output is different.
+    For quanta = 2, the output is:
+COMMAND         DESCRIPTION
+help            Displays all the commands
+quit            Exits / terminates the shell with "Bye!"
+set VAR STRING  Assigns a value to shell memory
+print VAR       Displays the STRING assigned to VAR
+run SCRIPT.TXT  Executes the file SCRIPT.TXT
+a3
+a3
+b3
+a3
+b3
+b3
+c3
+c3
+d3
+c3
+d3
+d3
+
+    For quanta = 5, the output is:
+COMMAND         DESCRIPTION
+help            Displays all the commands
+quit            Exits / terminates the shell with "Bye!"
+set VAR STRING  Assigns a value to shell memory
+print VAR       Displays the STRING assigned to VAR
+run SCRIPT.TXT  Executes the file SCRIPT.TXT
+a2
+a3
+a3
+b3
+c3
+d3
+b3
+c3
+d3
+b3
+c3
+d3
+
+    For quanta = 20, the output is:
+COMMAND         DESCRIPTION
+help            Displays all the commands
+quit            Exits / terminates the shell with "Bye!"
+set VAR STRING  Assigns a value to shell memory
+print VAR       Displays the STRING assigned to VAR
+run SCRIPT.TXT  Executes the file SCRIPT.TXT
+a1
+b1
+c1
+d1
+a2
+b2
+c2
+d2
+a3
+b3
+c3
+d3
+
+3.3.b
+    When quanta = 20, the execution time is the samllest. When quanta = 2, it takes longest execution time and 
+    when quanta = 5, the execution time is in the middle. I think the reason is that as the quanta increases, 
+    the number of task switch opertaions that the scheduler need to do decreases. For example, if the quanta is 1, the scheduler
+    need to perform a task switch for every line of code. If the quanta is 20, the scheduler only need to perform
+    a task switch for every 20 lines of code.
+
+3.3.c
+    The result should be similar to the case when the quanta is the number of lines of code. It the same reasoning as before.
+    If the quanta (amount of time that the processes are allowed to run) is very small, the scheduler 
+    will have to do more task switches which would increase the total execution time.
+

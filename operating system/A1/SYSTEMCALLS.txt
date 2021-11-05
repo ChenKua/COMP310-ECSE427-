@@ -1,0 +1,16 @@
+2 libc library calls that do not use system calls:
+    feof(p);
+    CPU cycles elapsed: 2
+
+    strcmp();
+    CPU cycles elapsed: 4
+
+2 libc library calls that use system calls:
+    FILE *p = fopen(words[1],"r");
+    CPU cycles elapsed: 125     
+    // Use system call: fd = open(file, how, ...)
+
+    printf("Welcome to the <Kua Chen> shell!\n");
+    CPU cycles elapsed: 149 
+    // Use system call: n= write(fd, buffer, nbytes)
+    

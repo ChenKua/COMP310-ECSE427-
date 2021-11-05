@@ -1,0 +1,12 @@
+help
+mount partition1 20 5
+write file1 [aaaaa bbbbb]
+write file1 [adc]
+write file2 [12345 88797]
+write file2 [ecse]
+mount partition1 20 5
+read file1 var
+print var
+read file2 x
+print x
+quit
